@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="tour.css">
+  </head>
+    <style>
+     p
+     {
+         color: white;
+     }
+     td
+     {
+         padding: 10px;
+     }
+    </style>
+    <body style="background-color: black;">
+        <img src="https://img.theculturetrip.com/1440x807/smart/wp-content/uploads/2016/06/24498998325_f451c67aae_o.jpg" style="width: 100%;" >
+        <table align="center" width="100%">
+            <tr>
+                <td>
+                    <h1 align="center" style="color: white;">The History of Charminar</h1>
+                 <p>
+                    Built in the year 1591 AD, Charminar is the beating heart of Hyderabadis. The landmark of the city was built by the fifth ruler of Qutb Shahi dynasty, Muhammad Quli Qutb Shah. Charminar, a monument and mosque, is an imposing model that celebrates the influence of the Muslim Turkomans in India. Considered to be in the top ten monuments of the country, here’s a little something about the structure and its history.
+                 </p>
+                 <p>
+                    Charminar is a square-shaped structure built out of granite and lime mortar. The monument predominantly has an Islamic-style design, but influences of Hindu architecture can also be seen in its ornamentation. It is flanked by four minarets on every corner which are 48.7 meters high. It is believed that the four minarets are symbolic of Islam’s first four Khalifas. Each minaret is four stories tall, and the floors are divided by beautifully carved rings around it. The mosque is located on the top floor, and visitors can enjoy a short climb of the 149 steps to get there.
+                 </p>
+                 <p>
+                    The reason behind building such an architectural marvel remains unclear, though it is widely accepted that the Charminar was built to commemorate the eradication of the plague which was widespread during that period in the city. According to Jean de Thévenot, a French traveler of the 17th century whose narration was complemented with the available Persian texts, the construction was done to celebrate the beginning of the second Islamic millennium year. Others have come to believe that the king erected the structure at the very spot where he first laid his eyes on his future begum (wife), Bhagmati.
+                 </p>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_mD0k6CubflEqmN-aebu1njfuRYHu5bWShQ&usqp=CAU" style="width:100%; height: 300px;">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgH-ijzwaRO-WLvO-6MPCESwc_hr6SiLa5AQ&usqp=CAU" style="width:100%; height: 300px;">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://wallpapercave.com/wp/wp6539220.jpg" style="width:100%; height: 300px;">
+    </div>    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>  
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    </body>
+</html>

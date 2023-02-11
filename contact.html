@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+td
+{
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+a{
+    color: white;
+}
+</style>
+</head>
+<body style="background-color: rgba(0, 0, 0, 0.712);">
+    <script>
+        function task()
+        {
+            alert("Those are invalid phone numbers");
+        }
+    </script>
+    <h1 align="center" style="color: white;"><b>CONTACT LIST</b></h1>
+    <table align="center" width="75%" border="1" style="box-shadow: 2px 4px 6px silver;" onclick="task()">
+    <tr>
+        <td align="center"><h2><b>PLACE NAME</b></h2></td>
+        <td align="center"><h2><b>GUIDE NAME</b></h2></td>
+        <td align="center"><h2><b>CONTACT NUMBER</b></h2></td>
+    </tr>
+    <tr>
+        <td>Golconda</td>
+        <td>Raju</td>
+        <td><a href="#">9640069290</a></td>
+    </tr>
+    <tr>
+        <td>Charminar</td>
+        <td>Ravi</td>
+        <td><a href="#">040 2452 2990</a></td>
+    </tr>
+    <tr>
+        <td>Birla Mandir</td>
+        <td>Suman</td>
+        <td><a href="#">040 2323 3259</a></td>
+    </tr>
+    <tr>
+        <td>Fort Warangal</td>
+        <td>Ramesh</td>
+        <td><a href="#">040 5624 3349</a></td>
+    </tr>
+    <tr>
+        <td>Lucknavaram</td>
+        <td>Varadha Rajuli</td>
+        <td><a href="#">8143095881</a></td>
+    </tr>
+    <tr>
+        <td>Pakhal Lake</td>
+        <td>Varadha Rajulu</td>
+        <td><a href="#">8143095881</a></td>
+    </tr>
+    <tr>
+        <td>Ramappa</td>
+        <td>Varadha Rajulu</td>
+        <td><a href="#">9182875567</a></td>
+    </tr>
+    <tr>
+        <td>Bhadrachalam</td>
+        <td>Rajesh</td>
+        <td><a href="#">9734612290</a></td>
+    </tr>
+    <tr>
+        <td>Bohatha Falls</td>
+        <td>Varadha Rajulu</td>
+        <td><a href="#">8143095881</a></td>
+    </tr>
+    <tr>
+        <td>Gayathri Falls</td>
+        <td>Narmadha</td>
+        <td><a href="#">7666333881</a></td>
+    </tr>
+    <tr>
+        <td>Medaram</td>
+        <td>Varadha Rajulu</td>
+        <td><a href="#">8143095881</a></td>
+    </tr>
+    <tr>
+        <td>Kinnerasani</td>
+        <td>Vijay</td>
+        <td><a href="#">9032797783</a></td>
+    </tr>
+    <tr>
+        <td>Nelakondapalli</td>
+        <td>Suguna</td>
+        <td><a href="#">8788932251</a></td>
+    </tr>
+    <tr>
+        <td>Ramoji Film City</td>
+        <td>Ravi</td>
+        <td><a href="#">7816601489</a></td>
+    </tr>
+    <tr>
+        <td>Bhemmuni Paadam</td>
+        <td>Vardha Rajulu</td>
+        <td><a href="#">8143095881</a></td>
+    </tr>
+    <tr>
+        <td>Pandavula Guhalu</td>
+        <td>Varadha Rajulu</td>
+        <td><a href="#">8143095881</a></td>
+    </tr>
+    <tr>
+        <td>Kaleshwaram</td>
+        <td>Venkatesh</td>
+        <td><a href="#">8993445665</a></td>
+    </tr>
+    <tr>
+        <td>Ananthgiri Hills</td>
+        <td>Suresh</td>
+        <td><a href="#">040 2334 5566</a></td>
+    </tr>
+    <tr>
+        <td>Kuntala</td>
+        <td>Jonny</td>
+        <td><a href="#">040 2333 6660</a></td>
+    </tr>
+    <tr>
+        <td>Adhilabad</td>
+        <td>Kalyan</td>
+        <td><a href="#">040 8881 7772</a></td>
+    </tr>
+    <tr>
+        <td>Nagarjuna Sagar</td>
+        <td>Malayya</td>
+        <td><a href="#">7816004988</a></td>
+    </tr>
+    </center>
+    </table>
+
+<div id="overlay" onclick="off()">
+  <div id="text">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrbGviqFckDtEu3JxziAFOm-9bUQZoBW3UvQ&usqp=CAU" width="300px" height="300px">
+      <p align="center">varnith-B20CS145 <br>pavan-B20CS158</p>
+  </div>
+</div>
+
+<div style="padding:20px">
+  <center> <button onclick="on()">Click for website owners</button></center>
+</div>
+
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>
+   
+</body>
+</html> 

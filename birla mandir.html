@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="tour.css">
+  </head>
+    <style>
+     p
+     {
+         color: white;
+     }
+     td
+     {
+         padding: 10px;
+     }
+    </style>
+    <body style="background-color: black;">
+        <img style="width: 100%; height: 500px;" src="https://media.gettyimages.com/photos/birla-mandir-picture-id150648375?k=20&m=150648375&s=612x612&w=0&h=IXYmOyzSMYFoBuUVycsJqOiQ6Ghdui30YrNb_6Vuxdk=">
+        <table align="center" width="90%">
+            <tr>
+                <td>
+                    <h1 align="center">Birla Mandir Temple</h1>
+                    <p>
+                        Birla Mandir is a Hindu temple, built on a 280 feet (85 m) high hillock called Naubath Pahad on a 13 acres (53,000 m2) plot in Hyderabad, Telangana, India. The construction took 10 years and was opened in 1976 by Swami Ranganathananda of Ramakrishna Mission. The temple was constructed by Birla Foundation, which has also constructed several similar temples across India, all of which are known as Birla Mandir.
+                    </p>
+                    <p>
+                        Birla Mandir is near to Assembly and Lakdi-ka-pul Hyderabad metro station. Birla Mandir is well connected by TSRTC buses and MMTS. The nearest MMTS station is Lakdi ka pul. Bus No: 5K,5S,5 From Secunderabad to Mehdipatnam any bus no. 113 from Uppal to Mehdipatnam.
+                    </p>
+                </td>
+            </tr>
+        </table><br>
+        <br><br>
+        
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://media.gettyimages.com/photos/low-angle-view-of-birla-temple-hyderabad-andhra-pradesh-india-picture-id464741783?k=20&m=464741783&s=612x612&w=0&h=tn8WKAm5m5yZryQBsp7FcG5z-ihoX1upn0RGyefah4k=" style="width:100%; height: 300px;">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://media.gettyimages.com/photos/birla-mandir-temple-in-jaipur-rajasthan-india-asia-picture-id535156950?k=20&m=535156950&s=612x612&w=0&h=LyQBZ4DHlbJEal9VLjWyVA44KtnvqKBYLXL5GLFViu4=" style="width:100%; height: 300px;">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://media.gettyimages.com/photos/birla-mandir-and-buddha-statue-in-one-frame-picture-id1292827477?k=20&m=1292827477&s=612x612&w=0&h=z9JBhF0gdO2OljJ12Rca7Ld4NzOgov9zUZxWLdPXCno=" style="width:100%; height: 300px;">
+    </div>    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>  
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    </body>
+</html>
